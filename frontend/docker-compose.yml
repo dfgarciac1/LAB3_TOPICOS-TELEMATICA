@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+  front:
+    image: front.image:latest
+    build: ./
+    ports:
+    - 80:80
+    restart: always
+    environment:
+        NODE_ENV: production
+        PORT: 80
+        HOST: 0.0.0.0
